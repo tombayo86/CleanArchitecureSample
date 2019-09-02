@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "28659ba496ba2261f1631999267ca65f"
+build_time: [1567414505, 124233000]
+inputs:
+  "/Users/tom/Developer/BayoMobile/CleanArchitectureSample/CleanArchitectureSample/CleanArchitectureSample/ViewController.swift": [1567414493, 829075612]
+  "/Users/tom/Developer/BayoMobile/CleanArchitectureSample/CleanArchitectureSample/CleanArchitectureSample/AppDelegate.swift": [1567414493, 825700881]

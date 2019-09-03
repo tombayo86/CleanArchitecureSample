@@ -5,15 +5,15 @@
       location = "group:CleanArchitectureSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/CleanArchitectureSample/Presentation/PresentationLayer.xcodeproj">
+      location = "group:../../../../../System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/Presentation/PresentationLayer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/CleanArchitectureSample/Domain/DomainLayer.xcodeproj">
+      location = "group:../../../../../System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/Domain/DomainLayer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/CleanArchitectureSample/Data/DataLayer.xcodeproj">
+      location = "group:../../../../../System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/Data/DataLayer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../../../System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/CleanArchitectureSample/Support/Support.xcodeproj">
+      location = "group:../../../../../System/Volumes/Data/Users/tom/Developer/BayoMobile/CleanArchitectureSample/Support/Support.xcodeproj">
    </FileRef>
 </Workspace>

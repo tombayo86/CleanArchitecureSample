@@ -12,25 +12,12 @@
 		E2D8499A231D105D00DB5293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D84998231D105D00DB5293 /* Main.storyboard */; };
 		E2D8499C231D105F00DB5293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8499B231D105F00DB5293 /* Assets.xcassets */; };
 		E2D8499F231D105F00DB5293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D8499D231D105F00DB5293 /* LaunchScreen.storyboard */; };
-		E2D849AA231D105F00DB5293 /* CleanArchitectureSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D849A9231D105F00DB5293 /* CleanArchitectureSampleTests.swift */; };
-		E2D84AB2231D2C0B00DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB1231D2C0B00DB5293 /* RxSwift.framework */; };
-		E2D84AB4231D2C1B00DB5293 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB3231D2C1B00DB5293 /* Quick.framework */; };
-		E2D84AB6231D2C1D00DB5293 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB5231D2C1D00DB5293 /* Nimble.framework */; };
 		E2D84AB8231D2C2600DB5293 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB7231D2C2600DB5293 /* DataLayer.framework */; };
 		E2D84ABA231D2C2600DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB9231D2C2600DB5293 /* DomainLayer.framework */; };
 		E2D84ABC231D2C2600DB5293 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84ABB231D2C2600DB5293 /* PresentationLayer.framework */; };
 		E2D84ABE231D2C2600DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84ABD231D2C2600DB5293 /* Support.framework */; };
+		E2D84B3C231D777700DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB1231D2C0B00DB5293 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E2D849A6231D105F00DB5293 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2D84989231D105D00DB5293 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2D84990231D105D00DB5293;
-			remoteInfo = CleanArchitectureSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E2D84991231D105D00DB5293 /* CleanArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +27,6 @@
 		E2D8499B231D105F00DB5293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D8499E231D105F00DB5293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D849A0231D105F00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D849A5231D105F00DB5293 /* CleanArchitectureSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D849A9231D105F00DB5293 /* CleanArchitectureSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureSampleTests.swift; sourceTree = "<group>"; };
 		E2D849AB231D105F00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D84AB1231D2C0B00DB5293 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -60,17 +46,8 @@
 				E2D84AB8231D2C2600DB5293 /* DataLayer.framework in Frameworks */,
 				E2D84ABA231D2C2600DB5293 /* DomainLayer.framework in Frameworks */,
 				E2D84ABC231D2C2600DB5293 /* PresentationLayer.framework in Frameworks */,
+				E2D84B3C231D777700DB5293 /* RxSwift.framework in Frameworks */,
 				E2D84ABE231D2C2600DB5293 /* Support.framework in Frameworks */,
-				E2D84AB2231D2C0B00DB5293 /* RxSwift.framework in Frameworks */,
-				E2D84AB4231D2C1B00DB5293 /* Quick.framework in Frameworks */,
-				E2D84AB6231D2C1D00DB5293 /* Nimble.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2D849A2231D105F00DB5293 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				E2D84991231D105D00DB5293 /* CleanArchitectureSample.app */,
-				E2D849A5231D105F00DB5293 /* CleanArchitectureSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +118,7 @@
 				E2D8498D231D105D00DB5293 /* Sources */,
 				E2D8498E231D105D00DB5293 /* Frameworks */,
 				E2D8498F231D105D00DB5293 /* Resources */,
+				E2D84B3D231D793A00DB5293 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,24 +128,6 @@
 			productName = CleanArchitectureSample;
 			productReference = E2D84991231D105D00DB5293 /* CleanArchitectureSample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E2D849A4231D105F00DB5293 /* CleanArchitectureSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2D849B1231D105F00DB5293 /* Build configuration list for PBXNativeTarget "CleanArchitectureSampleTests" */;
-			buildPhases = (
-				E2D849A1231D105F00DB5293 /* Sources */,
-				E2D849A2231D105F00DB5293 /* Frameworks */,
-				E2D849A3231D105F00DB5293 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2D849A7231D105F00DB5293 /* PBXTargetDependency */,
-			);
-			name = CleanArchitectureSampleTests;
-			productName = CleanArchitectureSampleTests;
-			productReference = E2D849A5231D105F00DB5293 /* CleanArchitectureSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,10 +141,6 @@
 				TargetAttributes = {
 					E2D84990231D105D00DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
-					};
-					E2D849A4231D105F00DB5293 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = E2D84990231D105D00DB5293;
 					};
 				};
 			};
@@ -203,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				E2D84990231D105D00DB5293 /* CleanArchitectureSample */,
-				E2D849A4231D105F00DB5293 /* CleanArchitectureSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,14 +173,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2D849A3231D105F00DB5293 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2D84B3D231D793A00DB5293 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2D8498D231D105D00DB5293 /* Sources */ = {
@@ -238,23 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2D849A1231D105F00DB5293 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2D849AA231D105F00DB5293 /* CleanArchitectureSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E2D849A7231D105F00DB5293 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2D84990231D105D00DB5293 /* CleanArchitectureSample */;
-			targetProxy = E2D849A6231D105F00DB5293 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2D84998231D105D00DB5293 /* Main.storyboard */ = {
@@ -436,48 +389,6 @@
 			};
 			name = Release;
 		};
-		E2D849B2231D105F00DB5293 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36NDC4TY8J;
-				INFOPLIST_FILE = CleanArchitectureSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tom.clean.architecture.sample.CleanArchitectureSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureSample.app/CleanArchitectureSample";
-			};
-			name = Debug;
-		};
-		E2D849B3231D105F00DB5293 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36NDC4TY8J;
-				INFOPLIST_FILE = CleanArchitectureSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tom.clean.architecture.sample.CleanArchitectureSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureSample.app/CleanArchitectureSample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,15 +406,6 @@
 			buildConfigurations = (
 				E2D849AF231D105F00DB5293 /* Debug */,
 				E2D849B0231D105F00DB5293 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2D849B1231D105F00DB5293 /* Build configuration list for PBXNativeTarget "CleanArchitectureSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2D849B2231D105F00DB5293 /* Debug */,
-				E2D849B3231D105F00DB5293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

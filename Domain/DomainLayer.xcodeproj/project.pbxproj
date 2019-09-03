@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		E2D84A4B231D122B00DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84A41231D122B00DB5293 /* DomainLayer.framework */; };
 		E2D84A50231D122B00DB5293 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84A4F231D122B00DB5293 /* DomainTests.swift */; };
-		E2D84A52231D122B00DB5293 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A44231D122B00DB5293 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D84A52231D122B00DB5293 /* DomainLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A44231D122B00DB5293 /* DomainLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D84B2A231D748300DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B29231D748300DB5293 /* Support.framework */; };
+		E2D84B31231D74F100DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B30231D74F100DB5293 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 
 /* Begin PBXFileReference section */
 		E2D84A41231D122B00DB5293 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2D84A44231D122B00DB5293 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		E2D84A44231D122B00DB5293 /* DomainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainLayer.h; sourceTree = "<group>"; };
 		E2D84A45231D122B00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D84A4A231D122B00DB5293 /* DomainLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84A4F231D122B00DB5293 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		E2D84A51231D122B00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D84B29231D748300DB5293 /* Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D84B30231D74F100DB5293 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D84B2A231D748300DB5293 /* Support.framework in Frameworks */,
+				E2D84B31231D74F100DB5293 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 				E2D84A43231D122B00DB5293 /* Domain */,
 				E2D84A4E231D122B00DB5293 /* DomainTests */,
 				E2D84A42231D122B00DB5293 /* Products */,
+				E2D84B28231D748300DB5293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +78,7 @@
 		E2D84A43231D122B00DB5293 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				E2D84A44231D122B00DB5293 /* Domain.h */,
+				E2D84A44231D122B00DB5293 /* DomainLayer.h */,
 				E2D84A45231D122B00DB5293 /* Info.plist */,
 			);
 			path = Domain;
@@ -86,6 +93,15 @@
 			path = DomainTests;
 			sourceTree = "<group>";
 		};
+		E2D84B28231D748300DB5293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B30231D74F100DB5293 /* RxSwift.framework */,
+				E2D84B29231D748300DB5293 /* Support.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +109,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D84A52231D122B00DB5293 /* Domain.h in Headers */,
+				E2D84A52231D122B00DB5293 /* DomainLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +364,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../Carthage/Build/iOS";
 				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,6 +390,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../Carthage/Build/iOS";
 				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

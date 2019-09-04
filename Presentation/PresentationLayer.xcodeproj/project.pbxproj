@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2ACA474231D90FF0090A764 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ACA473231D90FF0090A764 /* WelcomeViewController.swift */; };
 		E2D849F5231D113B00DB5293 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D849EB231D113A00DB5293 /* PresentationLayer.framework */; };
 		E2D849FA231D113B00DB5293 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D849F9231D113B00DB5293 /* PresentationTests.swift */; };
-		E2D849FC231D113B00DB5293 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D849EE231D113A00DB5293 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D849FC231D113B00DB5293 /* PresentationLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D849EE231D113A00DB5293 /* PresentationLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D84B0C231D702C00DB5293 /* PresentationAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B0B231D702C00DB5293 /* PresentationAppDelegate.swift */; };
+		E2D84B0E231D710D00DB5293 /* PresenterSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B0D231D710D00DB5293 /* PresenterSource.swift */; };
+		E2D84B12231D714200DB5293 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B11231D714200DB5293 /* WelcomePresenter.swift */; };
+		E2D84B15231D71AD00DB5293 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B14231D71AD00DB5293 /* Router.swift */; };
+		E2D84B17231D71C000DB5293 /* DismissableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B16231D71C000DB5293 /* DismissableRouter.swift */; };
+		E2D84B19231D71C900DB5293 /* PerformSegueRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B18231D71C900DB5293 /* PerformSegueRouter.swift */; };
+		E2D84B1B231D71D200DB5293 /* NavigableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B1A231D71D200DB5293 /* NavigableRouter.swift */; };
+		E2D84B1D231D71DD00DB5293 /* URLOpeningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B1C231D71DD00DB5293 /* URLOpeningRouter.swift */; };
+		E2D84B20231D729800DB5293 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D84B1F231D729800DB5293 /* Welcome.storyboard */; };
+		E2D84B25231D73D700DB5293 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B24231D73D700DB5293 /* Display.swift */; };
 		E2D84B27231D745100DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B26231D745100DB5293 /* DomainLayer.framework */; };
 		E2D84B2C231D748800DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B2B231D748800DB5293 /* Support.framework */; };
 		E2D84B2F231D74D300DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B2E231D74D300DB5293 /* RxSwift.framework */; };
+		E2D84B3B231D766300DB5293 /* Bundle+current.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B3A231D766300DB5293 /* Bundle+current.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,17 +38,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2ACA473231D90FF0090A764 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E2D849EB231D113A00DB5293 /* PresentationLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PresentationLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2D849EE231D113A00DB5293 /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
+		E2D849EE231D113A00DB5293 /* PresentationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationLayer.h; sourceTree = "<group>"; };
 		E2D849EF231D113A00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D849F4231D113B00DB5293 /* PresentationLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D849F9231D113B00DB5293 /* PresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTests.swift; sourceTree = "<group>"; };
 		E2D849FB231D113B00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D84A06231D116E00DB5293 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2D84A08231D117600DB5293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2D84B0B231D702C00DB5293 /* PresentationAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAppDelegate.swift; sourceTree = "<group>"; };
+		E2D84B0D231D710D00DB5293 /* PresenterSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterSource.swift; sourceTree = "<group>"; };
+		E2D84B11231D714200DB5293 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		E2D84B14231D71AD00DB5293 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E2D84B16231D71C000DB5293 /* DismissableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableRouter.swift; sourceTree = "<group>"; };
+		E2D84B18231D71C900DB5293 /* PerformSegueRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformSegueRouter.swift; sourceTree = "<group>"; };
+		E2D84B1A231D71D200DB5293 /* NavigableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigableRouter.swift; sourceTree = "<group>"; };
+		E2D84B1C231D71DD00DB5293 /* URLOpeningRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpeningRouter.swift; sourceTree = "<group>"; };
+		E2D84B1F231D729800DB5293 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		E2D84B24231D73D700DB5293 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 		E2D84B26231D745100DB5293 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84B2B231D748800DB5293 /* Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84B2E231D74D300DB5293 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E2D84B3A231D766300DB5293 /* Bundle+current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+current.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +107,14 @@
 		E2D849ED231D113A00DB5293 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				E2D849EE231D113A00DB5293 /* Presentation.h */,
+				E2D84B39231D765800DB5293 /* Shared */,
+				E2D84B23231D73C600DB5293 /* Displays */,
+				E2D84B13231D71A100DB5293 /* Routers */,
+				E2D84B0F231D712700DB5293 /* Welcome */,
+				E2D849EE231D113A00DB5293 /* PresentationLayer.h */,
 				E2D849EF231D113A00DB5293 /* Info.plist */,
+				E2D84B0B231D702C00DB5293 /* PresentationAppDelegate.swift */,
+				E2D84B0D231D710D00DB5293 /* PresenterSource.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -108,6 +138,60 @@
 				E2D84A06231D116E00DB5293 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2D84B0F231D712700DB5293 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B1E231D728C00DB5293 /* View */,
+				E2D84B10231D713000DB5293 /* Presenter */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		E2D84B10231D713000DB5293 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B11231D714200DB5293 /* WelcomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E2D84B13231D71A100DB5293 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B14231D71AD00DB5293 /* Router.swift */,
+				E2D84B16231D71C000DB5293 /* DismissableRouter.swift */,
+				E2D84B18231D71C900DB5293 /* PerformSegueRouter.swift */,
+				E2D84B1A231D71D200DB5293 /* NavigableRouter.swift */,
+				E2D84B1C231D71DD00DB5293 /* URLOpeningRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		E2D84B1E231D728C00DB5293 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B1F231D729800DB5293 /* Welcome.storyboard */,
+				E2ACA473231D90FF0090A764 /* WelcomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2D84B23231D73C600DB5293 /* Displays */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B24231D73D700DB5293 /* Display.swift */,
+			);
+			path = Displays;
+			sourceTree = "<group>";
+		};
+		E2D84B39231D765800DB5293 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E2D84B3A231D766300DB5293 /* Bundle+current.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +256,7 @@
 				TargetAttributes = {
 					E2D849EA231D113A00DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					E2D849F3231D113B00DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -201,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D84B20231D729800DB5293 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +304,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D84B25231D73D700DB5293 /* Display.swift in Sources */,
+				E2D84B3B231D766300DB5293 /* Bundle+current.swift in Sources */,
+				E2ACA474231D90FF0090A764 /* WelcomeViewController.swift in Sources */,
+				E2D84B19231D71C900DB5293 /* PerformSegueRouter.swift in Sources */,
+				E2D84B15231D71AD00DB5293 /* Router.swift in Sources */,
+				E2D84B0C231D702C00DB5293 /* PresentationAppDelegate.swift in Sources */,
+				E2D84B12231D714200DB5293 /* WelcomePresenter.swift in Sources */,
+				E2D84B17231D71C000DB5293 /* DismissableRouter.swift in Sources */,
+				E2D84B1D231D71DD00DB5293 /* URLOpeningRouter.swift in Sources */,
+				E2D84B0E231D710D00DB5293 /* PresenterSource.swift in Sources */,
+				E2D84B1B231D71D200DB5293 /* NavigableRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +462,7 @@
 		E2D84A00231D113B00DB5293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -372,6 +470,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../Carthage/Build/iOS";
 				INFOPLIST_FILE = Presentation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,6 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tom.clean.architecture.sample.Presentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +490,7 @@
 		E2D84A01231D113B00DB5293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -397,6 +498,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../Carthage/Build/iOS";
 				INFOPLIST_FILE = Presentation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,6 +517,7 @@
 		E2D84A03231D113B00DB5293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36NDC4TY8J;
 				INFOPLIST_FILE = PresentationTests/Info.plist;
@@ -433,6 +536,7 @@
 		E2D84A04231D113B00DB5293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36NDC4TY8J;
 				INFOPLIST_FILE = PresentationTests/Info.plist;

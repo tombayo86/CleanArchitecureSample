@@ -6,14 +6,14 @@ import UIKit
 
 final class WelcomeViewController: UIViewController, WelcomeRouter, WelcomeDisplay, PresenterSource {
     
-    @IBOutlet weak var loginButton: UIButton!
-    
     var presenter: WelcomePresenting!
-    //    private var windowRouter: WindowRouter!
+    
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        presenter = WelcomePresenter(display: self, router: self)
         presenter.configureDisplay()
     }
     

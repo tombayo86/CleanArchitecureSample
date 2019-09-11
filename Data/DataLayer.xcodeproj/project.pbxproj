@@ -10,7 +10,7 @@
 		E269779623265BD7006B8B9F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269779523265BD7006B8B9F /* Swinject.framework */; };
 		E2D84A6F231D125000DB5293 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84A65231D125000DB5293 /* DataLayer.framework */; };
 		E2D84A74231D125000DB5293 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84A73231D125000DB5293 /* DataTests.swift */; };
-		E2D84A76231D125000DB5293 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A68231D125000DB5293 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D84A76231D125000DB5293 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A68231D125000DB5293 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2D84B34231D750300DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B33231D750300DB5293 /* DomainLayer.framework */; };
 		E2D84B36231D750300DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B35231D750300DB5293 /* Support.framework */; };
 		E2D84B38231D750500DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B37231D750500DB5293 /* RxSwift.framework */; };
@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		E269779523265BD7006B8B9F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		E2D84A65231D125000DB5293 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2D84A68231D125000DB5293 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		E2D84A68231D125000DB5293 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		E2D84A69231D125000DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D84A6E231D125000DB5293 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84A73231D125000DB5293 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		E2D84A67231D125000DB5293 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E2D84A68231D125000DB5293 /* Data.h */,
+				E2D84A68231D125000DB5293 /* DataLayer.h */,
 				E2D84A69231D125000DB5293 /* Info.plist */,
 			);
 			path = Data;
@@ -117,7 +117,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D84A76231D125000DB5293 /* Data.h in Headers */,
+				E2D84A76231D125000DB5293 /* DataLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

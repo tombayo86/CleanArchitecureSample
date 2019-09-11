@@ -1,3 +1,5 @@
 github "ReactiveX/RxSwift" ~> 5.0
 github "Quick/Quick"
 github "Quick/Nimble" "v8.0.0"
+github "Swinject/Swinject"
+github "Swinject/SwinjectStoryboard"

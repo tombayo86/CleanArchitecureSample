@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24AD9882322695B00F06F81 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24AD9872322695B00F06F81 /* AppPreferences.swift */; };
 		E269779923265BE9006B8B9F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269779823265BE9006B8B9F /* Swinject.framework */; };
+		E269779D23265C5A006B8B9F /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269779C23265C5A006B8B9F /* DI.swift */; };
 		E2D84A93231D128600DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84A89231D128600DB5293 /* Support.framework */; };
 		E2D84A98231D128600DB5293 /* SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84A97231D128600DB5293 /* SupportTests.swift */; };
 		E2D84A9A231D128600DB5293 /* Support.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A8C231D128600DB5293 /* Support.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E24AD9872322695B00F06F81 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		E269779823265BE9006B8B9F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		E269779C23265C5A006B8B9F /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		E2D84A89231D128600DB5293 /* Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84A8C231D128600DB5293 /* Support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Support.h; sourceTree = "<group>"; };
 		E2D84A8D231D128600DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			children = (
 				E2D84A8C231D128600DB5293 /* Support.h */,
 				E2D84A8D231D128600DB5293 /* Info.plist */,
+				E24AD9872322695B00F06F81 /* AppPreferences.swift */,
+				E269779C23265C5A006B8B9F /* DI.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 				TargetAttributes = {
 					E2D84A88231D128600DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					E2D84A91231D128600DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -206,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E269779D23265C5A006B8B9F /* DI.swift in Sources */,
+				E24AD9882322695B00F06F81 /* AppPreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +362,7 @@
 		E2D84A9E231D128600DB5293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -371,6 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tom.clean.architecture.sample.Support;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +390,7 @@
 		E2D84A9F231D128600DB5293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -405,6 +417,7 @@
 		E2D84AA1231D128600DB5293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36NDC4TY8J;
 				INFOPLIST_FILE = SupportTests/Info.plist;
@@ -423,6 +436,7 @@
 		E2D84AA2231D128600DB5293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36NDC4TY8J;
 				INFOPLIST_FILE = SupportTests/Info.plist;

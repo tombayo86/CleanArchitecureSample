@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E204A9C5232142F5007E5484 /* PasswordLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9C4232142F5007E5484 /* PasswordLoginUseCase.swift */; };
+		E204A9C723214317007E5484 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9C623214317007E5484 /* UseCase.swift */; };
+		E204A9C9232143D2007E5484 /* BaseLoginUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9C8232143D2007E5484 /* BaseLoginUseCaseImplementation.swift */; };
+		E204A9CB23214611007E5484 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9CA23214611007E5484 /* LoginRepository.swift */; };
+		E204A9CE23214663007E5484 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9CD23214663007E5484 /* User.swift */; };
+		E24AD9922322833900F06F81 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24AD9912322833900F06F81 /* AuthenticationError.swift */; };
+		E24AD9992322966300F06F81 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24AD9982322966300F06F81 /* RepositoryError.swift */; };
 		E269779423265BC8006B8B9F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269779323265BC8006B8B9F /* Swinject.framework */; };
 		E2D84A4B231D122B00DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84A41231D122B00DB5293 /* DomainLayer.framework */; };
 		E2D84A50231D122B00DB5293 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84A4F231D122B00DB5293 /* DomainTests.swift */; };
 		E2D84A52231D122B00DB5293 /* DomainLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A44231D122B00DB5293 /* DomainLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2D84B2A231D748300DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B29231D748300DB5293 /* Support.framework */; };
 		E2D84B31231D74F100DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B30231D74F100DB5293 /* RxSwift.framework */; };
+		E2F9F6B92326708500562247 /* DomainDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9F6B82326708500562247 /* DomainDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E204A9C4232142F5007E5484 /* PasswordLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginUseCase.swift; sourceTree = "<group>"; };
+		E204A9C623214317007E5484 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		E204A9C8232143D2007E5484 /* BaseLoginUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginUseCaseImplementation.swift; sourceTree = "<group>"; };
+		E204A9CA23214611007E5484 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		E204A9CD23214663007E5484 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E24AD9912322833900F06F81 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
+		E24AD9982322966300F06F81 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 		E269779323265BC8006B8B9F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		E2D84A41231D122B00DB5293 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84A44231D122B00DB5293 /* DomainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainLayer.h; sourceTree = "<group>"; };
@@ -35,6 +50,7 @@
 		E2D84A51231D122B00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D84B29231D748300DB5293 /* Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84B30231D74F100DB5293 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E2F9F6B82326708500562247 /* DomainDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E204A9C3232142DE007E5484 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E204A9CC23214658007E5484 /* Models */,
+				E204A9C4232142F5007E5484 /* PasswordLoginUseCase.swift */,
+				E204A9C8232143D2007E5484 /* BaseLoginUseCaseImplementation.swift */,
+				E204A9CA23214611007E5484 /* LoginRepository.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E204A9CC23214658007E5484 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E204A9CD23214663007E5484 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E24AD9902322832800F06F81 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E24AD9912322833900F06F81 /* AuthenticationError.swift */,
+				E24AD9982322966300F06F81 /* RepositoryError.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		E2D84A37231D122B00DB5293 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +125,12 @@
 		E2D84A43231D122B00DB5293 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E24AD9902322832800F06F81 /* Shared */,
+				E204A9C3232142DE007E5484 /* Login */,
 				E2D84A44231D122B00DB5293 /* DomainLayer.h */,
 				E2D84A45231D122B00DB5293 /* Info.plist */,
+				E204A9C623214317007E5484 /* UseCase.swift */,
+				E2F9F6B82326708500562247 /* DomainDI.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -168,6 +216,7 @@
 				TargetAttributes = {
 					E2D84A40231D122B00DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					E2D84A49231D122B00DB5293 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -214,6 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E204A9C9232143D2007E5484 /* BaseLoginUseCaseImplementation.swift in Sources */,
+				E204A9CB23214611007E5484 /* LoginRepository.swift in Sources */,
+				E204A9C5232142F5007E5484 /* PasswordLoginUseCase.swift in Sources */,
+				E204A9CE23214663007E5484 /* User.swift in Sources */,
+				E24AD9922322833900F06F81 /* AuthenticationError.swift in Sources */,
+				E24AD9992322966300F06F81 /* RepositoryError.swift in Sources */,
+				E2F9F6B92326708500562247 /* DomainDI.swift in Sources */,
+				E204A9C723214317007E5484 /* UseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +418,7 @@
 		E2D84A56231D122B00DB5293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -379,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tom.clean.architecture.sample.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,6 +446,7 @@
 		E2D84A57231D122B00DB5293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -413,6 +473,7 @@
 		E2D84A59231D122B00DB5293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36NDC4TY8J;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -431,6 +492,7 @@
 		E2D84A5A231D122B00DB5293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36NDC4TY8J;
 				INFOPLIST_FILE = DomainTests/Info.plist;

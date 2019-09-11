@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E269779023265BBB006B8B9F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269778F23265BBB006B8B9F /* Swinject.framework */; };
 		E2D84995231D105D00DB5293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84994231D105D00DB5293 /* AppDelegate.swift */; };
 		E2D8499C231D105F00DB5293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8499B231D105F00DB5293 /* Assets.xcassets */; };
 		E2D8499F231D105F00DB5293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D8499D231D105F00DB5293 /* LaunchScreen.storyboard */; };
@@ -15,9 +16,11 @@
 		E2D84ABC231D2C2600DB5293 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84ABB231D2C2600DB5293 /* PresentationLayer.framework */; };
 		E2D84ABE231D2C2600DB5293 /* Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84ABD231D2C2600DB5293 /* Support.framework */; };
 		E2D84B3C231D777700DB5293 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84AB1231D2C0B00DB5293 /* RxSwift.framework */; };
+		E2F9F6B523266E8300562247 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F9F6B423266E8300562247 /* SwinjectStoryboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E269778F23265BBB006B8B9F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		E2D84991231D105D00DB5293 /* CleanArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84994231D105D00DB5293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D8499B231D105F00DB5293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		E2D84AB9231D2C2600DB5293 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84ABB231D2C2600DB5293 /* PresentationLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PresentationLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84ABD231D2C2600DB5293 /* Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F9F6B423266E8300562247 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 				E2D84AB8231D2C2600DB5293 /* DataLayer.framework in Frameworks */,
 				E2D84ABA231D2C2600DB5293 /* DomainLayer.framework in Frameworks */,
 				E2D84ABC231D2C2600DB5293 /* PresentationLayer.framework in Frameworks */,
+				E2F9F6B523266E8300562247 /* SwinjectStoryboard.framework in Frameworks */,
+				E269779023265BBB006B8B9F /* Swinject.framework in Frameworks */,
 				E2D84B3C231D777700DB5293 /* RxSwift.framework in Frameworks */,
 				E2D84ABE231D2C2600DB5293 /* Support.framework in Frameworks */,
 			);
@@ -91,6 +97,8 @@
 		E2D84AB0231D2C0A00DB5293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2F9F6B423266E8300562247 /* SwinjectStoryboard.framework */,
+				E269778F23265BBB006B8B9F /* Swinject.framework */,
 				E2D84AB7231D2C2600DB5293 /* DataLayer.framework */,
 				E2D84AB9231D2C2600DB5293 /* DomainLayer.framework */,
 				E2D84ABB231D2C2600DB5293 /* PresentationLayer.framework */,
@@ -112,7 +120,7 @@
 				E2D8498D231D105D00DB5293 /* Sources */,
 				E2D8498E231D105D00DB5293 /* Frameworks */,
 				E2D8498F231D105D00DB5293 /* Resources */,
-				E2D84B3D231D793A00DB5293 /* ShellScript */,
+				E2D84B3D231D793A00DB5293 /* Carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,7 +177,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E2D84B3D231D793A00DB5293 /* ShellScript */ = {
+		E2D84B3D231D793A00DB5293 /* Carthage copy frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +186,10 @@
 			);
 			inputPaths = (
 				"$(PROJECT_DIR)/Carthage/Build/iOS/RxSwift.framework",
+				"$(PROJECT_DIR)/Carthage/Build/iOS/Swinject.framework",
+				"$(PROJECT_DIR)/Carthage/Build/iOS/SwinjectStoryboard.framework",
 			);
+			name = "Carthage copy frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (

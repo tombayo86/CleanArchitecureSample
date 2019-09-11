@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E269779423265BC8006B8B9F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269779323265BC8006B8B9F /* Swinject.framework */; };
 		E2D84A4B231D122B00DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84A41231D122B00DB5293 /* DomainLayer.framework */; };
 		E2D84A50231D122B00DB5293 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84A4F231D122B00DB5293 /* DomainTests.swift */; };
 		E2D84A52231D122B00DB5293 /* DomainLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D84A44231D122B00DB5293 /* DomainLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E269779323265BC8006B8B9F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		E2D84A41231D122B00DB5293 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D84A44231D122B00DB5293 /* DomainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainLayer.h; sourceTree = "<group>"; };
 		E2D84A45231D122B00DB5293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D84B2A231D748300DB5293 /* Support.framework in Frameworks */,
+				E269779423265BC8006B8B9F /* Swinject.framework in Frameworks */,
 				E2D84B31231D74F100DB5293 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +99,7 @@
 		E2D84B28231D748300DB5293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E269779323265BC8006B8B9F /* Swinject.framework */,
 				E2D84B30231D74F100DB5293 /* RxSwift.framework */,
 				E2D84B29231D748300DB5293 /* Support.framework */,
 			);

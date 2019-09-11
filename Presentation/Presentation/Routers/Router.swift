@@ -11,4 +11,4 @@ import Foundation
  Presenters use this protocol to decide when to do a route,
  the Router executes the route. Often UIViewControllers implement the routing protocol.
  */
-public protocol Router: DismissableRouter, PerformSegueRouter, NavigableRouter, URLOpeningRouter {}
+public protocol Router: class {}

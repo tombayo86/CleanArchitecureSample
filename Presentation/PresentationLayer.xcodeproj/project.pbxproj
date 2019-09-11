@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E204A9BF23213E3D007E5484 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9BE23213E3D007E5484 /* LoginViewController.swift */; };
+		E204A9C223213E54007E5484 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204A9C123213E54007E5484 /* LoginPresenter.swift */; };
+		E24AD9862322648900F06F81 /* AlertPresentableDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24AD9852322648900F06F81 /* AlertPresentableDisplay.swift */; };
 		E269779223265BC1006B8B9F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E269779123265BC1006B8B9F /* Swinject.framework */; };
+		E269779F232660E2006B8B9F /* PresentationDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269779E232660E2006B8B9F /* PresentationDI.swift */; };
+		E27BA3A323269BF0007D6AD3 /* WelcomeSegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA3A223269BF0007D6AD3 /* WelcomeSegueIdentifier.swift */; };
 		E2ACA474231D90FF0090A764 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ACA473231D90FF0090A764 /* WelcomeViewController.swift */; };
 		E2D849F5231D113B00DB5293 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D849EB231D113A00DB5293 /* PresentationLayer.framework */; };
 		E2D849FA231D113B00DB5293 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D849F9231D113B00DB5293 /* PresentationTests.swift */; };
@@ -16,10 +21,6 @@
 		E2D84B0E231D710D00DB5293 /* PresenterSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B0D231D710D00DB5293 /* PresenterSource.swift */; };
 		E2D84B12231D714200DB5293 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B11231D714200DB5293 /* WelcomePresenter.swift */; };
 		E2D84B15231D71AD00DB5293 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B14231D71AD00DB5293 /* Router.swift */; };
-		E2D84B17231D71C000DB5293 /* DismissableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B16231D71C000DB5293 /* DismissableRouter.swift */; };
-		E2D84B19231D71C900DB5293 /* PerformSegueRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B18231D71C900DB5293 /* PerformSegueRouter.swift */; };
-		E2D84B1B231D71D200DB5293 /* NavigableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B1A231D71D200DB5293 /* NavigableRouter.swift */; };
-		E2D84B1D231D71DD00DB5293 /* URLOpeningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B1C231D71DD00DB5293 /* URLOpeningRouter.swift */; };
 		E2D84B20231D729800DB5293 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D84B1F231D729800DB5293 /* Welcome.storyboard */; };
 		E2D84B25231D73D700DB5293 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D84B24231D73D700DB5293 /* Display.swift */; };
 		E2D84B27231D745100DB5293 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D84B26231D745100DB5293 /* DomainLayer.framework */; };
@@ -40,7 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E204A9BE23213E3D007E5484 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E204A9C123213E54007E5484 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E24AD9852322648900F06F81 /* AlertPresentableDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentableDisplay.swift; sourceTree = "<group>"; };
 		E269779123265BC1006B8B9F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../../../../../../../../../Users/tom/Developer/BayoMobile/CleanArchitectureSample/Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		E269779E232660E2006B8B9F /* PresentationDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDI.swift; sourceTree = "<group>"; };
+		E27BA3A223269BF0007D6AD3 /* WelcomeSegueIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSegueIdentifier.swift; sourceTree = "<group>"; };
 		E2ACA473231D90FF0090A764 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E2D849EB231D113A00DB5293 /* PresentationLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PresentationLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D849EE231D113A00DB5293 /* PresentationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationLayer.h; sourceTree = "<group>"; };
@@ -54,10 +60,6 @@
 		E2D84B0D231D710D00DB5293 /* PresenterSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterSource.swift; sourceTree = "<group>"; };
 		E2D84B11231D714200DB5293 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
 		E2D84B14231D71AD00DB5293 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		E2D84B16231D71C000DB5293 /* DismissableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableRouter.swift; sourceTree = "<group>"; };
-		E2D84B18231D71C900DB5293 /* PerformSegueRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformSegueRouter.swift; sourceTree = "<group>"; };
-		E2D84B1A231D71D200DB5293 /* NavigableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigableRouter.swift; sourceTree = "<group>"; };
-		E2D84B1C231D71DD00DB5293 /* URLOpeningRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpeningRouter.swift; sourceTree = "<group>"; };
 		E2D84B1F231D729800DB5293 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		E2D84B24231D73D700DB5293 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 		E2D84B26231D745100DB5293 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E204A9BC23213E25007E5484 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E204A9C023213E45007E5484 /* Presenter */,
+				E204A9BD23213E2D007E5484 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E204A9BD23213E2D007E5484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E204A9BE23213E3D007E5484 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E204A9C023213E45007E5484 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E204A9C123213E54007E5484 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		E2D849E1231D113A00DB5293 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +140,7 @@
 		E2D849ED231D113A00DB5293 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E204A9BC23213E25007E5484 /* Login */,
 				E2D84B39231D765800DB5293 /* Shared */,
 				E2D84B23231D73C600DB5293 /* Displays */,
 				E2D84B13231D71A100DB5293 /* Routers */,
@@ -121,6 +149,7 @@
 				E2D849EF231D113A00DB5293 /* Info.plist */,
 				E2D84B0B231D702C00DB5293 /* PresentationAppDelegate.swift */,
 				E2D84B0D231D710D00DB5293 /* PresenterSource.swift */,
+				E269779E232660E2006B8B9F /* PresentationDI.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -153,6 +182,7 @@
 			children = (
 				E2D84B1E231D728C00DB5293 /* View */,
 				E2D84B10231D713000DB5293 /* Presenter */,
+				E27BA3A223269BF0007D6AD3 /* WelcomeSegueIdentifier.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -169,10 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				E2D84B14231D71AD00DB5293 /* Router.swift */,
-				E2D84B16231D71C000DB5293 /* DismissableRouter.swift */,
-				E2D84B18231D71C900DB5293 /* PerformSegueRouter.swift */,
-				E2D84B1A231D71D200DB5293 /* NavigableRouter.swift */,
-				E2D84B1C231D71DD00DB5293 /* URLOpeningRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -190,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D84B24231D73D700DB5293 /* Display.swift */,
+				E24AD9852322648900F06F81 /* AlertPresentableDisplay.swift */,
 			);
 			path = Displays;
 			sourceTree = "<group>";
@@ -312,17 +339,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E204A9BF23213E3D007E5484 /* LoginViewController.swift in Sources */,
 				E2D84B25231D73D700DB5293 /* Display.swift in Sources */,
 				E2D84B3B231D766300DB5293 /* Bundle+current.swift in Sources */,
 				E2ACA474231D90FF0090A764 /* WelcomeViewController.swift in Sources */,
-				E2D84B19231D71C900DB5293 /* PerformSegueRouter.swift in Sources */,
 				E2D84B15231D71AD00DB5293 /* Router.swift in Sources */,
 				E2D84B0C231D702C00DB5293 /* PresentationAppDelegate.swift in Sources */,
+				E269779F232660E2006B8B9F /* PresentationDI.swift in Sources */,
 				E2D84B12231D714200DB5293 /* WelcomePresenter.swift in Sources */,
-				E2D84B17231D71C000DB5293 /* DismissableRouter.swift in Sources */,
-				E2D84B1D231D71DD00DB5293 /* URLOpeningRouter.swift in Sources */,
+				E204A9C223213E54007E5484 /* LoginPresenter.swift in Sources */,
+				E24AD9862322648900F06F81 /* AlertPresentableDisplay.swift in Sources */,
+				E27BA3A323269BF0007D6AD3 /* WelcomeSegueIdentifier.swift in Sources */,
 				E2D84B0E231D710D00DB5293 /* PresenterSource.swift in Sources */,
-				E2D84B1B231D71D200DB5293 /* NavigableRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

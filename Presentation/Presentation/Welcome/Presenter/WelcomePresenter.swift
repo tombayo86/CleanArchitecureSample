@@ -4,11 +4,10 @@
 import DomainLayer
 import Foundation
 import Support
+import Swinject
 
 protocol WelcomePresenting: class {
     func configureDisplay()
-    var prefilledEmail: String? { get set }
-//    func prepareForPresentation(of presenter: LoginPresenting)
 }
 
 protocol WelcomeDisplay: Display {
@@ -17,11 +16,20 @@ protocol WelcomeDisplay: Display {
 
 protocol WelcomeRouter: Router {}
 
-final class WelcomePresenter: WelcomePresenting {
+final class WelcomePresenter: WelcomePresenting, DependencyInjectionAware {
     
     private weak var display: WelcomeDisplay!
     private weak var router: WelcomeRouter!
-    var prefilledEmail: String?
+    
+    // MARK: - DependencyInjectionAware
+    
+    public static func register(inContainer container: Container) {
+        container.register(WelcomePresenting.self) { (resolver: Resolver, display: WelcomeDisplay, router: WelcomeRouter) in
+            WelcomePresenter(display: display, router: router)
+            }.inObjectScope(.transient)
+    }
+    
+    // MARK: - Lifecycle
     
     init(display: WelcomeDisplay, router: WelcomeRouter) {
         self.display = display
@@ -31,9 +39,4 @@ final class WelcomePresenter: WelcomePresenting {
     func configureDisplay() {
         display.setLoginButtonTitle("Login")
     }
-    
-//    func prepareForPresentation(of presenter: LoginPresenting) {
-//        presenter.prefilledEmail = prefilledEmail
-//        prefilledEmail = nil
-//    }
 }

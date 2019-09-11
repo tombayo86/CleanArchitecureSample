@@ -1,5 +1,5 @@
 
-// Copyright © 2017 Suncorp Pty Ltd. All rights reserved.
+//  Copyright © 2019 Tom. All rights reserved.
 
 extension Bundle {
     static let current: Bundle = Bundle(for: PresentationAppDelegate.self)

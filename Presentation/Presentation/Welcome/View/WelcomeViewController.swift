@@ -3,17 +3,29 @@
 
 import Support
 import UIKit
+import Swinject
+import SwinjectStoryboard
 
-final class WelcomeViewController: UIViewController, WelcomeRouter, WelcomeDisplay, PresenterSource {
+final class WelcomeViewController: UIViewController, DependencyInjectionAware, WelcomeRouter, WelcomeDisplay, PresenterSource {
     
     var presenter: WelcomePresenting!
     
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    // MARK: - DependencyInjectionAware
+    
+    static func register(inContainer container: Container) {
+        container.storyboardInitCompleted(WelcomeViewController.self) { resolver, controller in
+            controller.presenter = resolver.resolve(WelcomePresenting.self, arguments: controller as WelcomeDisplay, controller as WelcomeRouter)!
+        }
+    }
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        presenter = WelcomePresenter(display: self, router: self)
         presenter.configureDisplay()
     }
     
@@ -27,26 +39,14 @@ final class WelcomeViewController: UIViewController, WelcomeRouter, WelcomeDispl
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-//    @IBAction func unwindToWelcomeScreen(_: UIStoryboardSegue) {}
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //        if segue.identifier == WelcomeSegueIdentifier.welcomeToLogin.rawValue,
-        //            let navigationController: UINavigationController = segue.destination as? UINavigationController,
-        //            let loginViewController: LoginViewController = navigationController.viewControllers.first as? LoginViewController {
-        //            presenter.prepareForPresentation(of: loginViewController.presenter)
-        //        }
-    }
-    
     // MARK: - WelcomeDisplay
     
     func setLoginButtonTitle(_ value: String) {
         loginButton.setTitle(value, for: .normal)
     }
     
-    // MARK: - Resettable
-    
-    func reset() {
-        dismiss(animated: false)
+    func setWelcomeTitle(_ value: String) {
+        titleLabel.text = "Welcome"
     }
 }
 
